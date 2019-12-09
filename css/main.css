@@ -1,0 +1,335 @@
+/* my colors oblivion #030303 rgb(3, 3, 3) darla's sacrifice #830c12 rgb(131, 12, 18) the genius #c71515 rgb(191, 21, 21) not quite black #303030 rgb(48, 48, 48) midnight times #414546 rgb(65, 69, 70) */
+
+body {
+    background-image: url("../img/background.jpg");
+}
+
+.top {
+    background-color: rgb(48, 48, 48);
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    padding: 0 0 0 20px;
+}
+.bottom {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    padding: 0 20px 0 0;
+}
+
+a {
+    color: #bababa;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .8s;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(191, 21, 21);
+    text-decoration: none;
+}
+
+.cart-box {
+    padding-left: 20px;
+}
+.cart-box a {
+    color: rgb(191, 21, 21);
+}
+.cart-box a:hover {
+    color: #bababa;
+}
+
+.search-block{
+    width:250px;
+    height:50px;
+    background: rgba(48,48,48, .8);
+    overflow:hidden;
+    border-radius:100px;
+    position:relative;
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.4);
+    float: right;
+    margin: 50px 6.2% 2px 20px;
+    filter: opacity(.96);
+}
+
+.search-block .icon{
+    position:absolute;
+    pointer-events:none;
+    left:14px;
+    top:50%;
+    transform:translateY(-50%);
+    transition-duration: 2s;
+    z-index:0;
+    float: right;
+}
+
+.search-block .icon:before{
+    margin-top:-4px;
+    display:block;
+    content:'';
+    height:20px;
+    width:20px;
+    border-radius:20px;
+    background:rgb(191, 21, 21);
+}
+
+.search-block .icon:after{
+    position:absolute;
+    bottom:-8px;
+    right:5px;
+    display:block;
+    content:'';
+    height:15px;
+    width:4px;
+    border-radius:20px;
+    transform:rotate(-45deg);
+    transform-origin:center top;
+    background:rgb(191, 21, 21);
+}
+
+.search-block input[type="search"]{
+    height:100%;
+    width:100%;
+    border:0px;
+    background:transparent;
+    position:relative;
+    outline:0;
+    -webkit-appearance:none;
+    padding:0px 20px 0px 50px;
+    font-size:18px;
+    color:#bababa;
+    z-index:2;
+}
+
+.search-block input[type="search"]:focus + .icon{
+    transform:translate(50%,-50%) scale(24) rotate(180deg);
+}
+
+.search-block input[type="search"]::placeholder {
+    color: rgb(191, 21, 21);
+    opacity: 1;
+}
+
+.search-block input[type="search"]:-ms-input-placeholder { 
+    color: white;
+}
+
+.search-block input[type="search"]::-ms-input-placeholder {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    padding: 15px 0;
+    margin: 130px 6% 0 6%;
+    justify-content: center;
+    background-color: rgba(3, 3, 3, .25);
+    filter: grayscale(10%);
+    filter: opacity(.9);
+    border-radius: 25px;
+}
+
+.pnp {
+    transition-property: filter;
+    transition-timing-function: linear;
+    transition-duration: 3s;
+    }
+.pnp:hover {
+    filter: grayscale(30%);
+}
+
+.products-box {
+    justify-content: space-between;
+    background-color: rgba(3, 3, 3, .3);
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+.products-top {
+    display: flex;
+    justify-content: space-between;
+}
+.products-heading {
+    color: #bababa;
+    font-size: 46px;
+    margin: 20px 0;
+}
+.sort {
+    margin: 15px;
+}
+.btn-secondary {
+    background-color: #303030;
+    border: none;
+    margin-top: 20px;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .8s;
+}
+.btn-secondary:hover {
+    background-color: #414546;
+}
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    background-color: rgb(3, 3, 3);
+    color: #bababa;
+    margin: 0 0 20px 0;
+}
+.btn-primary {
+    background-color: rgb(191, 21, 21);
+    color: #bababa;
+    border: none;
+    transition-property: background-color, color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .8s;
+}
+.btn-primary:hover {
+    background-color: rgb(131, 12, 18);
+}
+.card-img-top {
+    height: 150px;
+    width: 222px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.gore {
+    object-fit: cover;
+}
+.prosthetic {
+    height: 250px;
+    object-fit: cover;
+}
+.jumbotron {
+    background-color: #030303;
+    color: #bababa;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: rgba(48, 48, 48, .9);
+    display: flex;
+    flex-direction: column;
+}
+.footer-top {
+    display: flex;
+    width: 100%;
+}
+.footnav {
+    list-style: none;
+    color: #bababa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    width: 50%;
+}
+.social {
+    font-size: 60px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social i {
+    padding:10px;
+}
+.social a {
+    color: #c71515;
+}
+.social a:hover {
+    color: #bababa;
+}
+.copy {
+    color: #bababa;
+    background-color: rgba(48, 48, 48, .8);
+    padding: 20px 0 20px 40px;
+    font-size: 12px;
+}
+.copy a {
+    color: #c71515;
+}
+.copy a:hover {
+    color: #bababa;
+}
+
+
+
+/* media queries */
+@media (max-width: 991px) {
+.poo img {
+    margin: 50px 0;
+}
+.ripped, .broken{
+    display: none;
+}
+}
+@media (max-width: 767px) {
+.poo img {
+    margin: 0;
+}
+}
+@media (max-width: 570px) {
+.hide-1 {
+    display: none;
+}
+}
+@media (max-width: 494px) {
+    .bottom {
+        font-size: 13px;
+    }
+    .social {
+        flex-direction: column;
+    }
+    }
+@media (max-width: 477px) {
+    .hide-5 {
+        display: none;
+    }
+    .card-box {
+        justify-content: center;
+    }
+    .sort {
+        display: none;
+    }
+    }
+@media (max-width: 444px) {
+    .hide-2 {
+        display: none;
+    }
+    }
+@media (max-width: 437px) {
+    .hide-3 {
+        display: none;
+    }
+    }
+@media (max-width: 354px) {
+    .top {
+        font-size: 15px;
+    }
+    }
+@media (max-width: 349px) {
+    .hide-4 {
+        display: none;
+    }
+    }
+@media (max-width: 343px) {
+    .top {
+        font-size: 14px;
+    }
+    }
+@media (max-width: 333px) {
+    .top {
+        font-size: 13px;
+    }
+    }
+@media (max-width: 322px) {
+    .top {
+        font-size: 12px;
+    }
+    }
